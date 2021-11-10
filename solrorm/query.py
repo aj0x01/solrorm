@@ -33,7 +33,7 @@ class Q:
             # accepts scalar and iters, change iters to tuple
             else:
                 # a normal parameter
-                if isinstance(value, str):
+                if isinstance(value, str) or isinstance(value, int):
                     pass
                 else:
                     value = tuple(value)
